@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="50dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:id="@+id/labelGamertag"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextInPrimary"
+            android:text="Gamertag"
+    />
+    <EditText
+            android:id="@+id/etGamertag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextInPrimary"
+            android:layout_below="@+id/labelGamertag"
+            android:layout_marginBottom="15dp"
+    />
+
+
+    <Button
+            android:id="@+id/btnPrevious"
+            android:layout_below="@+id/etGamertag"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorTextInPrimary"
+            android:text="Previous"
+    />
+
+    <Button
+            android:id="@+id/btnNext"
+            android:layout_below="@+id/etGamertag"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorTextInPrimary"
+            android:text="Next"
+    />
+
+
+</RelativeLayout>

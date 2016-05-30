@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+              android:background="@drawable/boxshadow">
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"/>
+
+    <TextView android:id="@+id/gamertag"
+              android:layout_toRightOf="@+id/image"
+              android:textSize="24sp"
+              android:fontFamily="sans-serif-condensed"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="10dp"
+              xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+
+    <TextView android:id="@+id/name"
+              android:layout_toRightOf="@+id/image"
+              android:layout_below="@+id/gamertag"
+              android:textSize="18sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+    <TextView android:id="@+id/score"
+              android:textSize="18sp"
+              android:text="300TP"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentBottom="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+
+
+
+</RelativeLayout>

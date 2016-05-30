@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="50dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:id="@+id/labelFirstname"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextInPrimary"
+            android:text="Firstname"
+    />
+    <EditText
+            android:id="@+id/etFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextInPrimary"
+            android:layout_below="@+id/labelFirstname"
+            android:layout_marginBottom="15dp"
+    />
+
+    <TextView
+            android:id="@+id/labelLastname"
+            android:textSize="26sp"
+            android:layout_below="@+id/etFirstname"
+            android:textColor="@color/colorTextInPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="lastname"
+    />
+
+    <EditText
+            android:id="@+id/etLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextInPrimary"
+            android:layout_below="@+id/labelLastname"
+            android:layout_marginBottom="20dp"
+    />
+
+    <Button
+            android:id="@+id/btnPrevious"
+            android:layout_below="@+id/etLastname"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorTextInPrimary"
+            android:text="Previous"
+             />
+
+    <Button
+            android:id="@+id/btnNext"
+            android:layout_below="@+id/etLastname"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorTextInPrimary"
+            android:text="Next"
+             />
+
+
+</RelativeLayout>
