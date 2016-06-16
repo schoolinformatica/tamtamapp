@@ -5,6 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/tamtamlogin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
@@ -15,24 +16,35 @@
 
         <EditText
                 android:id="@+id/etEmail"
+                android:textColor="@color/colorTextInPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
+                android:textColorLink="@color/colorTextInPrimary"
+                android:shadowColor="@color/colorTextInPrimary"
+                android:textColorHint="@color/colorTextInPrimary"
+                android:layout_marginTop="100dp"
                 android:hint="@string/prompt_email"
         />
 
         <EditText
                 android:layout_below="@id/etEmail"
                 android:hint="@string/prompt_password"
+                android:textColor="@color/colorTextInPrimary"
+                android:textColorHint="@color/colorTextInPrimary"
                 android:inputType="textPassword"
                 android:id="@+id/etPassword"
+                android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
                   android:layout_height="wrap_content"/>
 
         <Button
                 android:layout_below="@id/etPassword"
                 android:text="login"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="40dp"
                 android:id="@+id/btnLogin"
+                android:textColor="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -40,7 +52,10 @@
             android:layout_alignParentRight="true"
             android:layout_below="@id/etPassword"
             android:text="register"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorAccent"
             android:id="@+id/btnRegister"
+            android:textColor="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

@@ -51,7 +51,6 @@ public class HttpRequestManager {
     }
 
     private String makeHttpCall() throws IOException {
-        Log.d("debug", "begin call");
 
         if(!get) {
             this.urlConnection.setDoOutput(true);
@@ -76,7 +75,6 @@ public class HttpRequestManager {
         }
 
         InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-
 
         return streamToString(in);
 

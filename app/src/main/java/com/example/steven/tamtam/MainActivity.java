@@ -17,18 +17,31 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import com.annimon.stream.Stream;
 import com.example.steven.tamtam.Adapters.ColleagueListAdapter;
 import com.example.steven.tamtam.Fragments.MyListFragment;
+import com.example.steven.tamtam.Httprequester.HttpParam;
+import com.example.steven.tamtam.Httprequester.HttpParamManager;
+import com.example.steven.tamtam.Httprequester.HttpRequestManager;
+import com.example.steven.tamtam.Models.Colleague;
 import com.example.steven.tamtam.Models.Person;
+import com.example.steven.tamtam.Models.UserSession;
+import com.example.steven.tamtam.apimanager.ModelParser;
+import org.json.JSONArray;
+import org.json.JSONException;
 
 
 import java.io.BufferedWriter;
+import java.io.IOException;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     ColleagueListAdapter adapter;
 
     ArrayList<Person> personList = new ArrayList<>();
+    UserSession userSession;
 
 
 
@@ -62,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        userSession = new UserSession(getBaseContext());
+        userSession.init();
 
         iconCloseSearch = getResources().getDrawable(R.drawable.close_icon);
         iconOpenSearch = getResources().getDrawable(R.drawable.search_icon);
@@ -90,6 +107,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        try {
+            getUsers();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void getUsers() throws JSONException {
+        HttpParamManager paramManager = new HttpParamManager();
+        try {
+            HttpRequestManager requestManager = new HttpRequestManager("http://145.24.222.151/users", paramManager);
+            requestManager.setRequestMethod("GET");
+            requestManager.setRequestProperty("Authorization:", userSession.getToken());
+            requestManager.startRequest();
+
+            if (requestManager.getResponseCode() == 200) {
+                JSONArray ja = new JSONArray(requestManager.getResponse());
+                for (int i = 0; i < ja.length(); i++) {
+                    personList.add(ModelParser.parseUser(ja.get(i).toString()));
+                }
+            } else if (requestManager.getResponseCode() == 401) {
+                userSession.refreshToken();
+                getUsers();
+            } else {
+                //error
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

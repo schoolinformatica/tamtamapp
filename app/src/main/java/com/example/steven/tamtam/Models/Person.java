@@ -3,12 +3,13 @@ package com.example.steven.tamtam.Models;
 import android.net.Uri;
 import android.util.Base64;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by steven on 5/22/16.
  */
-public abstract class Person {
+public abstract class Person implements Serializable {
     private String firstname;
     private String lastname;
     private String email;

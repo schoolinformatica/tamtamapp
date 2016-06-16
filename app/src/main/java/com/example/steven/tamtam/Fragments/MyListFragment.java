@@ -2,6 +2,7 @@ package com.example.steven.tamtam.Fragments;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.text.Editable;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -19,7 +21,10 @@ import com.example.steven.tamtam.MainActivity;
 import com.example.steven.tamtam.Models.Colleague;
 import com.example.steven.tamtam.Models.Person;
 import com.example.steven.tamtam.R;
+import com.example.steven.tamtam.RegisterActivity;
+import com.example.steven.tamtam.UserInfoActivity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
@@ -46,28 +51,18 @@ public class MyListFragment extends ListFragment implements AdapterView.OnItemCl
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        fillList();
-
         setListAdapter(adapter);
         getListView().setOnItemClickListener(this);
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
-        Toast.makeText(getActivity(), "Item: " + position, Toast.LENGTH_SHORT).show();
-    }
-
-    public void fillList() {
-        Colleague c = new Colleague();
-        c.setFirstname("John");
-        c.setLastname("Doe");
-        c.setEmail("johndoe@example.com");
-        c.setGamertag("grumpyOldMan123");
-        c.setDateOfBirth(new Date(1985, 2, 28));
-        c.setDescription("Lots and lots of text");
-       list.add(0, c);
-       list.add(1, c);
-       list.add(2, c);
+        view.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.imageviewclick));
+        Intent intent = new Intent(getActivity().getBaseContext(), UserInfoActivity.class);
+        intent.putExtra("person", adapter.getItem(position));
+        startActivity(intent);
 
     }
+
+
 }
