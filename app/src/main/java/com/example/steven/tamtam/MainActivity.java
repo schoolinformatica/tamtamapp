@@ -3,7 +3,6 @@ package com.example.steven.tamtam;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -32,8 +31,12 @@ import com.example.steven.tamtam.Models.Colleague;
 import com.example.steven.tamtam.Models.Person;
 import com.example.steven.tamtam.Models.UserSession;
 import com.example.steven.tamtam.apimanager.ModelParser;
+import com.github.clans.fab.FloatingActionButton;
+import com.github.clans.fab.FloatingActionMenu;
 import org.json.JSONArray;
 import org.json.JSONException;
+
+
 
 
 import java.io.BufferedWriter;
@@ -97,21 +100,36 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorAccent)));
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         try {
             getUsers();
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        FloatingActionMenu materialDesignFAM = (FloatingActionMenu) findViewById(R.id.material_design_android_floating_action_menu);
+        FloatingActionButton floatingActionButton1 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item1);
+        FloatingActionButton floatingActionButton2 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item2);
+        FloatingActionButton floatingActionButton3 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item3);
+
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //TODO something when floating action menu first item clicked
+
+            }
+        });
+        floatingActionButton2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //TODO something when floating action menu second item clicked
+
+            }
+        });
+        floatingActionButton3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //TODO something when floating action menu third item clicked
+
+            }
+        });
 
     }
 

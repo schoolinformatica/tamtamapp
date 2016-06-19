@@ -10,6 +10,7 @@
         tools:showIn="@layout/activity_user_info"
         tools:context="com.example.steven.tamtam.UserInfoActivity">
     <ScrollView
+            android:id="@+id/svUserInfo"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
         <RelativeLayout
