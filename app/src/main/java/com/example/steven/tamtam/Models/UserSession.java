@@ -15,6 +15,7 @@ public class UserSession extends User {
     String PREFER_NAME = "signeduser";
     int PRIVATE_MODE = 0;
 
+    String KEY_ID = "id";
     String KEY_PASSWORD = "password";
     String KEY_EMAIL = "email";
     String KEY_FIRSTNAME = "firstname";
@@ -29,6 +30,7 @@ public class UserSession extends User {
     }
 
     public void save() {
+        editor.putString(KEY_ID, getId());
         editor.putString(KEY_PASSWORD, getPassword());
         editor.putString(KEY_EMAIL, getEmail());
         editor.putString(KEY_FIRSTNAME, getFirstname());
@@ -39,12 +41,13 @@ public class UserSession extends User {
     }
 
     public void init() {
-        setPassword(pref.getString("password", null));
-        setFirstname(pref.getString("firstname", null));
-        setLastname(pref.getString("lastname", null));
-        setGamertag(pref.getString("gamertag", null));
-        setToken(pref.getString("token", null));
-        setEmail(pref.getString("email", null));
+        setId(pref.getString(KEY_ID, null));
+        setPassword(pref.getString(KEY_PASSWORD, null));
+        setFirstname(pref.getString(KEY_FIRSTNAME, null));
+        setLastname(pref.getString(KEY_LASTNAME, null));
+        setGamertag(pref.getString(KEY_GAMERTAG, null));
+        setToken(pref.getString(KEY_TOKEN, null));
+        setEmail(pref.getString(KEY_EMAIL, null));
     }
 
     public void refreshToken() {

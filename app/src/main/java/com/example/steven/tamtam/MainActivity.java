@@ -1,5 +1,6 @@
 package com.example.steven.tamtam;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
@@ -114,7 +115,8 @@ public class MainActivity extends AppCompatActivity {
 
         floatingActionButton1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //TODO something when floating action menu first item clicked
+                Intent intent = new Intent(getBaseContext(), PartyActivity.class);
+                startActivity(intent);
 
             }
         });

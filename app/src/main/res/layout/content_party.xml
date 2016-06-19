@@ -1,18 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/activity_party"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.steven.tamtam.PartyActivity">
+        android:padding="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_user_info"
+        tools:context="com.example.steven.tamtam.UserInfoActivity">
+    <ScrollView
+            android:id="@+id/svUserInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                    android:id="@+id/rlTime"
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
-            android:text="@string/large_text"/>
+                <TextView
+                        android:id="@+id/tvTitleTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="22sp"
+                        android:text="BESCHIKBAAR"
+                />
 
-</android.support.v4.widget.NestedScrollView>
+                <EditText
+                        android:id="@+id/etStartTime"
+                        android:layout_below="@+id/tvTitleTime"
+                        android:hint="Begin tijd"
+                        android:editable="false"
+                        android:textColorHint="@color/colorTextInPrimary"
+                        android:textColor="@color/colorTextInPrimary"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <EditText
+                        android:id="@+id/etEndTime"
+                        android:hint="Eind tijd"
+                        android:textColorHint="@color/colorTextInPrimary"
+                        android:layout_below="@+id/etStartTime"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/colorTextInPrimary"
+                        android:editable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rlLocation"
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:layout_below="@id/rlTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tvTitleLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="22sp"
+                        android:text="LOCATIE"
+                />
+
+                <Spinner
+                        android:id="@+id/spLocation"
+                        android:popupBackground="@color/colorPrimary"
+                        android:layout_below="@+id/tvTitleLocation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/btSubmit"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/rlLocation"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/colorTextInPrimary"
+                    android:background="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:text="Search Party"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

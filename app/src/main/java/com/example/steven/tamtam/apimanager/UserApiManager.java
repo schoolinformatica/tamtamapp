@@ -16,35 +16,7 @@ import java.util.concurrent.ExecutionException;
 /**
  * Created by steven on 5/30/16.
  */
-public class UserApiManager {
-    private final static String BASE_URL = "http://145.24.222.151";
-    private final static String URL_API_AUTHENTICATION = BASE_URL + "/api/authenticate?";
-    private final static String URL_USERS_REGISTER = BASE_URL + "/users";
-    private final static String URL_USER_GET = BASE_URL + "/users/email/";
-
-
-    public static Boolean setAPIToken(User u) {
-        HttpParamManager paramManager = new HttpParamManager();
-        paramManager.setParam(new HttpParam("email", u.getEmail()));
-        paramManager.setParam(new HttpParam("password", u.getPassword()));
-
-        try {
-            HttpRequestManager requestManager = new HttpRequestManager(URL_API_AUTHENTICATION, paramManager);
-            requestManager.setRequestMethod("POST");
-            requestManager.startRequest();
-            u.setToken(new JSONObject(requestManager.getResponse()).getString("token"));
-            return true;
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
+public class UserApiManager extends ApiManager {
 
     public static boolean register(User u) {
         HttpParamManager paramManager = new HttpParamManager();
