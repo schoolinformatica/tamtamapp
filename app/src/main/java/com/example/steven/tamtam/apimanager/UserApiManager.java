@@ -65,6 +65,7 @@ public class UserApiManager extends ApiManager {
                 if (httpRequestManager.getResponseCode() == 200) {
                     UserSession userSession = ModelParser.parseUserSession(httpRequestManager.getResponse(), context);
                     userSession.setToken(u.getToken());
+                    userSession.setPassword(u.getPassword());
                     userSession.save();
                     return true;
                 }

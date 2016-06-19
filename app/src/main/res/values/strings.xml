@@ -28,5 +28,6 @@
         <item>Rijswijk</item>
         <item>Rotterdam</item>
     </string-array>
+    <string name="title_activity_party_pending">PartyPendingActivity</string>
 
 </resources>

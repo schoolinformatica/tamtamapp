@@ -1,6 +1,7 @@
 package com.example.steven.tamtam;
 
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -47,6 +48,8 @@ public class PartyActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        calendar.add(Calendar.MONTH, 1);
+
         userSession = new UserSession(getBaseContext());
         userSession.init();
 
@@ -83,6 +86,7 @@ public class PartyActivity extends AppCompatActivity {
                                             + selectedHour + ":"
                                             + selectedMinute + ":00"
                             );
+                            etStartTime.setText(simpleDate.format(startTime));
                         } catch (ParseException e) {
                             e.printStackTrace();
                         }
@@ -90,6 +94,8 @@ public class PartyActivity extends AppCompatActivity {
                 }, hour, minute, true);//Yes 24 hour time
                 mTimePicker.setTitle("Select Time");
                 mTimePicker.show();
+
+
             }
         });
 
@@ -111,6 +117,7 @@ public class PartyActivity extends AppCompatActivity {
                                             + selectedHour + ":"
                                             + selectedMinute + ":00"
                             );
+                            etEndTime.setText(simpleDate.format(endTime));
                         } catch (ParseException e) {
                             e.printStackTrace();
                         }
@@ -118,6 +125,7 @@ public class PartyActivity extends AppCompatActivity {
                 }, hour, minute, true);//Yes 24 hour time
                 mTimePicker.setTitle("Select Time");
                 mTimePicker.show();
+
             }
         });
 
@@ -129,6 +137,8 @@ public class PartyActivity extends AppCompatActivity {
 
                 try {
                     if (PartySearchApiManager.partySearch(partySearch, getBaseContext())) {
+                        Intent intent = new Intent(getBaseContext(), PartyPendingActivity.class);
+                        startActivity(intent);
                         finish();
                     }
                 } catch (IOException e) {

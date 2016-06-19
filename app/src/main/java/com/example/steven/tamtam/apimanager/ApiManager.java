@@ -24,6 +24,9 @@ public abstract class ApiManager {
     final static String URL_USERS_REGISTER = BASE_URL + "/users";
     final static String URL_USER_GET = BASE_URL + "/users/email/";
     final static String URL_PARTYSEARCH_ID = BASE_URL + "/partysearch/";
+    final static String URL_PARTYUSERS_ID = BASE_URL + "/partyusers/";
+    final static String URL_PARTYPENDING_ID = BASE_URL + "/partypending/";
+    final static String URL_PARTY_ID = BASE_URL + "/party/";
 
     public static Boolean setAPIToken(User u) {
         HttpParamManager paramManager = new HttpParamManager();

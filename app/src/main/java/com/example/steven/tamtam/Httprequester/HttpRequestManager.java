@@ -29,7 +29,7 @@ public class HttpRequestManager {
     public void setRequestMethod(String requestMethod) throws ProtocolException {
         this.urlConnection.setRequestMethod(requestMethod);
 
-        if(requestMethod.equals("GET"))
+        if(!requestMethod.equals("POST"))
             get = true;
     }
 
@@ -60,7 +60,9 @@ public class HttpRequestManager {
             BufferedWriter writer = new BufferedWriter(
                     new OutputStreamWriter(os, "UTF-8"));
 
-            writer.write(paramManager.toHttpBody());
+            if (paramManager != null)
+                writer.write(paramManager.toHttpBody());
+
             writer.flush();
             writer.close();
 
@@ -68,6 +70,7 @@ public class HttpRequestManager {
         }
 
         responseCode = urlConnection.getResponseCode();
+        Log.d("reponse", responseCode + "");
 
         if (responseCode == 401) {
             //TODO: get Token and retry

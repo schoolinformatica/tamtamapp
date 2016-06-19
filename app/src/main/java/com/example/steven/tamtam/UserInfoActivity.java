@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -29,11 +30,10 @@ public class UserInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_info);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         ImageView imgView = (ImageView) findViewById(R.id.imgProfile);
         imgView.setImageDrawable(ContextCompat.getDrawable(getBaseContext(), R.drawable.pasfoto));
-
-        final ColorDrawable cd = new ColorDrawable(Color.rgb(68, 74, 83));
 
         Colleague c = (Colleague) getIntent().getSerializableExtra("person");
         DateFormat format = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH);
@@ -55,52 +55,8 @@ public class UserInfoActivity extends AppCompatActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(false);
-        actionBar.setBackgroundDrawable(cd);
-        cd.setAlpha(0);
 
-        final ViewTreeObserver.OnScrollChangedListener onScrollChangedListener = new
-                ViewTreeObserver.OnScrollChangedListener() {
 
-                    @Override
-                    public void onScrollChanged() {
-                        cd.setAlpha(getAlphaforActionBar(sv.getScrollY()));
-                    }
-
-                    private int getAlphaforActionBar(int scrollY) {
-                        int minDist = 0,maxDist = 650;
-                        if(scrollY>maxDist){
-                            return 255;
-                        }
-                        else if(scrollY<minDist){
-                            return 0;
-                        }
-                        else {
-                            int alpha = 0;
-                            alpha = (int)  ((255.0/maxDist)*scrollY);
-                            return alpha;
-                        }
-                    }
-                };
-
-        sv = (ScrollView) findViewById(R.id.svUserInfo);
-        sv.setOnTouchListener(new View.OnTouchListener() {
-            private ViewTreeObserver observer;
-
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (observer == null) {
-                    observer = sv.getViewTreeObserver();
-                    observer.addOnScrollChangedListener(onScrollChangedListener);
-                }
-                else if (!observer.isAlive()) {
-                    observer.removeOnScrollChangedListener(onScrollChangedListener);
-                    observer = sv.getViewTreeObserver();
-                    observer.addOnScrollChangedListener(onScrollChangedListener);
-                }
-
-                return false;
-            }
-        });
 
     }
 
