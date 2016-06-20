@@ -17,6 +17,8 @@ public abstract class Person implements Serializable {
     private String description;
     private Date dateOfBirth;
     private Uri imageUrl;
+    private boolean playing;
+    private boolean rookie;
 
     public String getFirstname() {
         return firstname;
@@ -72,5 +74,21 @@ public abstract class Person implements Serializable {
 
     public void setImageUrl(Uri imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public boolean isPlaying() {
+        return playing;
+    }
+
+    public void setPlaying(boolean playing) {
+        this.playing = playing;
+    }
+
+    public boolean isRookie() {
+        return rookie;
+    }
+
+    public void setRookie(boolean rookie) {
+        this.rookie = rookie;
     }
 }

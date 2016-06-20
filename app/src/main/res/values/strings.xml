@@ -29,5 +29,6 @@
         <item>Rotterdam</item>
     </string-array>
     <string name="title_activity_party_pending">PartyPendingActivity</string>
+    <string name="title_activity_party_info">PartyInfoActivity</string>
 
 </resources>

@@ -10,6 +10,8 @@ import org.json.JSONObject;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -40,6 +42,17 @@ public class ModelParser {
         u.setDateOfBirth(format.parse(jo.getString("dateOfBirth")));
         u.setGamertag(jo.getString("gamertag"));
         u.setDescription(jo.getString("description"));
+
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.MONTH, -1);
+        Date now = cal.getTime();
+        Date joinDate = format.parse(jo.getString("created_at"));
+        if (joinDate.before(now))
+            u.setRookie(false);
+        else
+            u.setRookie(true);
+
+        u.setPlaying(false);
 
         return u;
     }

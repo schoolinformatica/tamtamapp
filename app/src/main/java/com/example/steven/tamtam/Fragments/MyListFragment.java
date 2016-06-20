@@ -31,8 +31,8 @@ import java.util.Locale;
 
 public class MyListFragment extends ListFragment implements AdapterView.OnItemClickListener {
 
-    ArrayList<Person> list;
-    ColleagueListAdapter adapter;
+    public ArrayList<Person> list;
+    public ColleagueListAdapter mAdapter;
     EditText searchField;
 
 
@@ -40,8 +40,6 @@ public class MyListFragment extends ListFragment implements AdapterView.OnItemCl
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
-        list = ((MainActivity)getActivity()).getPersonList();
-        adapter = ((MainActivity)getActivity()).getAdapter();
 
         return view;
     }
@@ -51,7 +49,7 @@ public class MyListFragment extends ListFragment implements AdapterView.OnItemCl
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        setListAdapter(adapter);
+        setListAdapter(mAdapter);
         getListView().setOnItemClickListener(this);
     }
 
@@ -59,7 +57,7 @@ public class MyListFragment extends ListFragment implements AdapterView.OnItemCl
     public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
         view.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.imageviewclick));
         Intent intent = new Intent(getActivity().getBaseContext(), UserInfoActivity.class);
-        intent.putExtra("person", adapter.getItem(position));
+        intent.putExtra("person", mAdapter.getItem(position));
         startActivity(intent);
 
     }
