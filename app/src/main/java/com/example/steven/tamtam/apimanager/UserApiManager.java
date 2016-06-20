@@ -24,7 +24,7 @@ public class UserApiManager extends ApiManager {
         paramManager.setParam(new HttpParam("lastname", u.getLastname()));
         paramManager.setParam(new HttpParam("email", u.getEmail()));
         paramManager.setParam(new HttpParam("password", u.getPassword()));
-        paramManager.setParam(new HttpParam("dateOfBirth", u.getDateOfBirth().toString()));
+        paramManager.setParam(new HttpParam("dateOfBirth", u.getDateOfBirth().toString("dd-MM-yyyy")));
         paramManager.setParam(new HttpParam("gamertag", u.getGamertag()));
         paramManager.setParam(new HttpParam("description", "description"));
 
