@@ -43,6 +43,14 @@ public class ModelParser {
         u.setGamertag(jo.getString("gamertag"));
         u.setDescription(jo.getString("description"));
 
+        if(jo.has("score")) {
+            if (!jo.getString("score").equals("null")) {
+                u.setScore(Integer.parseInt(jo.getJSONObject("score").getString("score")));
+            } else {
+                u.setScore(0);
+            }
+        }
+
         Calendar cal = Calendar.getInstance();
         cal.add(Calendar.MONTH, -1);
         Date now = cal.getTime();
@@ -51,8 +59,6 @@ public class ModelParser {
             u.setRookie(false);
         else
             u.setRookie(true);
-
-        u.setPlaying(false);
 
         return u;
     }
