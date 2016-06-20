@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionMenu materialDesignFAM = (FloatingActionMenu) findViewById(R.id.material_design_android_floating_action_menu);
         FloatingActionButton floatingActionButton1 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item1);
         FloatingActionButton floatingActionButton2 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item2);
-        FloatingActionButton floatingActionButton3 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item3);
+        FloatingActionButton floatingActionButton4 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item4);
 
         floatingActionButton1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -117,10 +117,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        floatingActionButton3.setOnClickListener(new View.OnClickListener() {
+        floatingActionButton4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //TODO something when floating action menu third item clicked
-
+                Intent intent = new Intent(getBaseContext(), MySplashesActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -241,18 +241,6 @@ public class MainActivity extends AppCompatActivity {
                     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
                         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
-                        adapterPlaying = new ColleagueListAdapter(getBaseContext(), R.layout.list_row, playingList);
-                        mAdapter = adapterPlaying;
-
-                        return view;
-                    }
-                };
-            } else if (position == 1) {
-                return new MyListFragment() {
-                    @Override
-                    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-                        View view = inflater.inflate(R.layout.fragment_main, container, false);
-
                         for (Person p:
                                 personList) {
                             if (p.isRookie()) {
@@ -262,6 +250,19 @@ public class MainActivity extends AppCompatActivity {
 
                         adapterRookie = new ColleagueListAdapter(getBaseContext(), R.layout.list_row, rookieList);
                         mAdapter = adapterRookie;
+
+                        return view;
+                    }
+                };
+
+            } else if (position == 1) {
+                return new MyListFragment() {
+                    @Override
+                    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+                        View view = inflater.inflate(R.layout.fragment_main, container, false);
+
+                        adapterPlaying = new ColleagueListAdapter(getBaseContext(), R.layout.list_row, playingList);
+                        mAdapter = adapterPlaying;
 
                         return view;
                     }
@@ -291,9 +292,9 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "NOW PLAYING";
-                case 1:
                     return "RECRUITS";
+                case 1:
+                    return "NOW PLAYING";
                 case 2:
                     return "ALL COLLEAGUES";
             }

@@ -45,18 +45,12 @@ public class ColleagueListAdapter extends ArrayAdapter<Person> implements Filter
             ImageView img = (ImageView) v.findViewById(R.id.image);
             TextView txtname = (TextView) v.findViewById(R.id.name);
             TextView txtgamertag = (TextView) v.findViewById(R.id.gamertag);
+            TextView txtscore = (TextView) v.findViewById(R.id.score);
 
-            if (img != null) {
                 img.setImageDrawable(getContext().getResources().getDrawable(R.drawable.pasfoto));
-            }
-
-            if (txtname != null) {
                 txtname.setText(p.getFirstname() + " " + p.getLastname());
-            }
-
-            if (txtgamertag != null) {
+                txtscore.setText(((Colleague) p).getScore() + "TP");
                 txtgamertag.setText(p.getGamertag());
-            }
         }
 
         return v;

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_party_pending"
+        tools:context="com.example.steven.tamtam.PartyPendingActivity">
+
+    <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:text="PEOPLE YOU HAVE SPLASHED"
+    />
+
+    <HorizontalScrollView
+            android:id="@+id/hsvRecentlyKilled"
+            android:layout_below="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+
+                android:id="@+id/rlContentScrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+            android:id="@+id/tvTitleTwo"
+            android:layout_below="@+id/hsvRecentlyKilled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:text="PEOPLE YOU GOT SPLASHED BY"
+    />
+
+    <HorizontalScrollView
+            android:id="@+id/hsvRecentlyKilledBy"
+            android:layout_below="@+id/tvTitleTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+
+                android:id="@+id/rlContentScrollviewKilledBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
+
+
