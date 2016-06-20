@@ -58,7 +58,7 @@ public class RegisterDateFragment extends Fragment {
 
     private Date stringToDate(String stringDate) {
         Date date = new Date();
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
         try {
             date = format.parse(stringDate);
         } catch (ParseException e) {
