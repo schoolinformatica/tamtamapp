@@ -32,7 +32,10 @@ public class RegisterFragmentAdapter extends FragmentPagerAdapter {
             case 4:
                 return new RegisterPasswordFragment();
             case 5:
+                return new RegisterDescriptionFragment();
+            case 6:
                 return  new RegisterImageFragment();
+
             default:
                 return new RegisterNameFragment();
         }
@@ -42,7 +45,7 @@ public class RegisterFragmentAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 3 total pages.
-        return 6;
+        return 7;
     }
 
     @Override

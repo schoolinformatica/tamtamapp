@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RegisterDateFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Fragments/RegisterDateFragment.java">
+      <file leaf-file-name="RegisterActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="60" column="66" selection-start-line="60" selection-start-column="66" selection-end-line="60" selection-end-column="66" />
+            <state relative-caret-position="32">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,6 +44,9 @@
       <list>
         <option value="$PROJECT_DIR$/main/java/com/example/steven/tamtam/apimanager/UserApiManager.java" />
         <option value="$PROJECT_DIR$/main/java/com/example/steven/tamtam/Fragments/RegisterDateFragment.java" />
+        <option value="$PROJECT_DIR$/main/res/layout/fragment_register_description.xml" />
+        <option value="$PROJECT_DIR$/main/java/com/example/steven/tamtam/Fragments/RegisterDescriptionFragment.java" />
+        <option value="$PROJECT_DIR$/main/java/com/example/steven/tamtam/Adapters/RegisterFragmentAdapter.java" />
       </list>
     </option>
   </component>
@@ -117,6 +120,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,6 +359,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="steven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tamtam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -330,6 +411,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ceesjan\Documents\Hogeschool\Jaar 2\Project\project78\tamtamapp\app\src\main\res\layout" />
+      <recent name="C:\Users\ceesjan\Documents\Hogeschool\Jaar 2\Project\project78\tamtamapp\app\src\main\java\com\example\steven\tamtam\Fragments" />
+    </key>
   </component>
   <component name="RunManager" selected="Android Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1013,12 +1101,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1466436070697</updated>
-      <workItem from="1466436072014" duration="1328000" />
+      <workItem from="1466436072014" duration="2086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1328000" />
+    <option name="totallyTimeSpent" value="2086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1066,70 +1154,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <marker date="1466435789551" expanded="false" signature="43:1663" placeholder="..." />
-            <marker date="1466435789551" expanded="true" signature="2336:4729" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="2782:2898" placeholder="//..." />
-            <marker date="1466435789551" expanded="true" signature="4028:4218" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="4070:4208" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="4297:4494" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="4339:4484" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="4573:4719" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="4615:4709" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="4780:7078" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="7145:7257" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="7324:7492" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="7564:8208" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="7574:7770" placeholder="//..." />
-            <marker date="1466435789551" expanded="true" signature="8278:11050" placeholder="{...}" />
-            <marker date="1466435789551" expanded="false" signature="8336:8351" placeholder=" { " />
-            <marker date="1466435789551" expanded="false" signature="8361:8371" placeholder=" }" />
-            <marker date="1466435789551" expanded="true" signature="8437:10571" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="8451:8604" placeholder="//..." />
-            <marker date="1466435789551" expanded="true" signature="8682:9176" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="8832:9158" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="9262:9994" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="9412:9976" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="10061:10546" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="10211:10528" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="10621:10689" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="10764:11044" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="11101:11459" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="11495:11719" placeholder="{...}" />
-            <marker date="1466435789551" expanded="false" signature="11765:11776" placeholder=" { " />
-            <marker date="1466435789551" expanded="false" signature="11794:11800" placeholder=" }" />
-            <marker date="1466435789551" expanded="true" signature="11840:12969" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="11981:12961" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="12062:12562" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="12719:12785" placeholder="{...}" />
-            <marker date="1466435789551" expanded="true" signature="12934:12949" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <marker date="1466435789592" expanded="false" signature="43:609" placeholder="..." />
-            <marker date="1466435789592" expanded="true" signature="863:1573" placeholder="{...}" />
-            <marker date="1466435789592" expanded="true" signature="1128:1292" placeholder="//..." />
-            <marker date="1466435789592" expanded="true" signature="1640:1812" placeholder="{...}" />
-            <marker date="1466435789592" expanded="true" signature="1884:2307" placeholder="{...}" />
-            <marker date="1466435789592" expanded="true" signature="1894:2090" placeholder="//..." />
-            <marker date="1466435789592" expanded="false" signature="2335:2346" placeholder=" { " />
-            <marker date="1466435789592" expanded="false" signature="2358:2364" placeholder=" }" />
-            <marker date="1466435789592" expanded="false" signature="2408:2419" placeholder=" { " />
-            <marker date="1466435789592" expanded="false" signature="2437:2443" placeholder=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Date/DatePicker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -1155,9 +1179,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/apimanager/UserApiManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <folding>
+            <marker date="1466438639741" expanded="false" signature="54:528" placeholder="..." />
+            <marker date="1466438639741" expanded="true" signature="530:570" placeholder="/**...*/" />
+            <marker date="1466438639741" expanded="true" signature="664:1779" placeholder="{...}" />
+            <marker date="1466438639741" expanded="true" signature="1860:3486" placeholder="{...}" />
+            <marker date="1466438639741" expanded="true" signature="3524:3586" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Fragments/RegisterDateFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="60" column="66" selection-start-line="60" selection-start-column="66" selection-end-line="60" selection-end-column="66" />
+          <folding>
+            <marker date="1466438998673" expanded="false" signature="55:705" placeholder="..." />
+            <marker date="1466438998673" expanded="true" signature="707:747" placeholder="/**...*/" />
+            <marker date="1466438998673" expanded="true" signature="1074:1793" placeholder="{...}" />
+            <marker date="1466438998673" expanded="true" signature="1844:2113" placeholder="{...}" />
+            <marker date="1466438998673" expanded="true" signature="2186:2321" placeholder="{...}" />
+            <marker date="1466438998673" expanded="true" signature="2242:2315" placeholder="{...}" />
+            <marker date="1466438998673" expanded="true" signature="2394:2605" placeholder="{...}" />
+            <marker date="1466438998673" expanded="true" signature="2450:2599" placeholder="{...}" />
+            <marker date="1466438998673" expanded="true" signature="2677:2956" placeholder="{...}" />
+            <marker date="1466438998673" expanded="true" signature="2733:2950" placeholder="{...}" />
+            <marker date="1466438998673" expanded="true" signature="3097:3314" placeholder="{...}" />
+            <marker date="1466438998673" expanded="true" signature="3223:3307" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Fragments/RegisterGamertagFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <marker date="1466435789511" expanded="false" signature="53:450" placeholder="..." />
+            <marker date="1466435789511" expanded="true" signature="452:492" placeholder="/**...*/" />
+            <marker date="1466435789511" expanded="true" signature="828:1460" placeholder="{...}" />
+            <marker date="1466435789511" expanded="true" signature="1533:1668" placeholder="{...}" />
+            <marker date="1466435789511" expanded="true" signature="1589:1662" placeholder="{...}" />
+            <marker date="1466435789511" expanded="true" signature="1741:1938" placeholder="{...}" />
+            <marker date="1466435789511" expanded="true" signature="1797:1932" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/res/layout/fragment_register_description.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1466460940491" expanded="true" signature="54:1738" placeholder="..." />
+            <marker date="1466460940491" expanded="true" signature="339:622" placeholder="..." />
+            <marker date="1466460940491" expanded="true" signature="637:946" placeholder="..." />
+            <marker date="1466460940491" expanded="true" signature="961:1311" placeholder="..." />
+            <marker date="1466460940491" expanded="true" signature="1325:1718" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
+        <state relative-caret-position="608">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <marker date="1466435789571" expanded="true" signature="43:83" placeholder="/**...*/" />
@@ -1180,8 +1269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Models/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+        <state relative-caret-position="524">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="30" />
           <folding>
             <marker date="1466435789568" expanded="false" signature="50:147" placeholder="..." />
             <marker date="1466435789568" expanded="true" signature="149:189" placeholder="/**...*/" />
@@ -1205,8 +1294,8 @@
             <marker date="1466435789568" expanded="false" signature="1173:1179" placeholder=" }" />
             <marker date="1466435789568" expanded="false" signature="1231:1242" placeholder=" { " />
             <marker date="1466435789568" expanded="false" signature="1273:1279" placeholder=" }" />
-            <marker date="1466435789568" expanded="false" signature="1313:1324" placeholder=" { " />
-            <marker date="1466435789568" expanded="false" signature="1343:1349" placeholder=" }" />
+            <marker date="1466435789568" expanded="true" signature="1313:1324" placeholder=" { " />
+            <marker date="1466435789568" expanded="true" signature="1343:1349" placeholder=" }" />
             <marker date="1466435789568" expanded="false" signature="1399:1410" placeholder=" { " />
             <marker date="1466435789568" expanded="false" signature="1441:1447" placeholder=" }" />
             <marker date="1466435789568" expanded="false" signature="1477:1488" placeholder=" { " />
@@ -1225,24 +1314,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/apimanager/UserApiManager.java">
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Fragments/RegisterDescriptionFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        <state relative-caret-position="256">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1466438639741" expanded="false" signature="54:528" placeholder="..." />
-            <marker date="1466438639741" expanded="true" signature="530:570" placeholder="/**...*/" />
-            <marker date="1466438639741" expanded="true" signature="664:1779" placeholder="{...}" />
-            <marker date="1466438639741" expanded="true" signature="1860:3486" placeholder="{...}" />
-            <marker date="1466438639741" expanded="true" signature="3524:3586" placeholder="{...}" />
+            <marker date="1466461051984" expanded="false" signature="53:450" placeholder="..." />
+            <marker date="1466461051984" expanded="true" signature="452:494" placeholder="/**...*/" />
+            <marker date="1466461051984" expanded="true" signature="836:1471" placeholder="{...}" />
+            <marker date="1466461051984" expanded="true" signature="1544:1679" placeholder="{...}" />
+            <marker date="1466461051984" expanded="true" signature="1600:1673" placeholder="{...}" />
+            <marker date="1466461051984" expanded="true" signature="1752:1955" placeholder="{...}" />
+            <marker date="1466461051984" expanded="true" signature="1808:1949" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Fragments/RegisterDateFragment.java">
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Fragments/MyListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="60" column="66" selection-start-line="60" selection-start-column="66" selection-end-line="60" selection-end-column="66" />
+        <state relative-caret-position="-148">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding>
+            <marker date="1466435789491" expanded="false" signature="55:962" placeholder="..." />
+            <marker date="1466435789491" expanded="true" signature="1280:1390" placeholder="{...}" />
+            <marker date="1466435789491" expanded="true" signature="1468:1615" placeholder="{...}" />
+            <marker date="1466435789491" expanded="true" signature="1715:2005" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Fragments/PartyListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1466435789495" expanded="false" signature="55:1117" placeholder="..." />
+            <marker date="1466435789495" expanded="true" signature="1421:1530" placeholder="{...}" />
+            <marker date="1466435789495" expanded="true" signature="1608:1834" placeholder="{...}" />
+            <marker date="1466435789495" expanded="true" signature="1934:2038" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5460">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1466458775239" expanded="false" signature="43:1663" placeholder="..." />
+            <marker date="1466458775239" expanded="true" signature="2336:3861" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="2336:4777" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="2782:2898" placeholder="//..." />
+            <marker date="1466458775239" expanded="true" signature="4028:4218" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="4070:4208" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="4297:4494" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="4339:4484" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="4573:4767" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="4615:4757" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="4828:7126" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="7193:7305" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="7372:7540" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="7612:8256" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="7622:7818" placeholder="//..." />
+            <marker date="1466458775239" expanded="true" signature="8326:11099" placeholder="{...}" />
+            <marker date="1466458775239" expanded="false" signature="8384:8399" placeholder=" { " />
+            <marker date="1466458775239" expanded="false" signature="8409:8419" placeholder=" }" />
+            <marker date="1466458775239" expanded="true" signature="8485:10620" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="8499:8652" placeholder="//..." />
+            <marker date="1466458775239" expanded="true" signature="8730:9462" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="8880:9444" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="9549:10043" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="9699:10025" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="10110:10595" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="10260:10577" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="10670:10738" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="10813:11093" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="11150:11508" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="11544:11768" placeholder="{...}" />
+            <marker date="1466458775239" expanded="false" signature="11814:11825" placeholder=" { " />
+            <marker date="1466458775239" expanded="false" signature="11843:11849" placeholder=" }" />
+            <marker date="1466458775239" expanded="true" signature="11889:13018" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="12030:13010" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="12111:12611" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="12768:12834" placeholder="{...}" />
+            <marker date="1466458775239" expanded="true" signature="12983:12998" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="73" column="62" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
+          <folding>
+            <marker date="1466435789547" expanded="false" signature="43:589" placeholder="..." />
+            <marker date="1466435789547" expanded="true" signature="809:1370" placeholder="{...}" />
+            <marker date="1466435789547" expanded="false" signature="1404:1415" placeholder=" { " />
+            <marker date="1466435789547" expanded="false" signature="1424:1430" placeholder=" }" />
+            <marker date="1466435789547" expanded="true" signature="1503:2402" placeholder="{...}" />
+            <marker date="1466435789547" expanded="true" signature="1559:2396" placeholder="{...}" />
+            <marker date="1466435789547" expanded="true" signature="2479:2670" placeholder="{...}" />
+            <marker date="1466435789547" expanded="true" signature="2535:2664" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/Adapters/RegisterFragmentAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <marker date="1466461212514" expanded="false" signature="52:280" placeholder="..." />
+            <marker date="1466461212514" expanded="true" signature="282:322" placeholder="/**...*/" />
+            <marker date="1466461212514" expanded="false" signature="447:458" placeholder=" { " />
+            <marker date="1466461212514" expanded="false" signature="468:474" placeholder=" }" />
+            <marker date="1466461212514" expanded="true" signature="532:1324" placeholder="{...}" />
+            <marker date="1466461212514" expanded="true" signature="542:691" placeholder="//..." />
+            <marker date="1466461212514" expanded="true" signature="1366:1422" placeholder="{...}" />
+            <marker date="1466461212514" expanded="true" signature="1489:1723" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/example/steven/tamtam/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
