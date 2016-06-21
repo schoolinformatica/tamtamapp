@@ -104,7 +104,7 @@ public class RegisterDateFragment extends Fragment {
 
         @Override
         public void onDateSet(android.widget.DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-            etDate.setText(year + "-" + monthOfYear + "-" + dayOfMonth);
+            etDate.setText(dayOfMonth + "-" + monthOfYear + "-" + year);
         }
 
     };
